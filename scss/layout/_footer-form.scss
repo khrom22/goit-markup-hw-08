@@ -1,10 +1,21 @@
 .footer-form__container {
-    margin-left: 93px;
+    @media screen and (min-width:768px) {
+        // margin-left: 93px;
+    }
+    
 }
 
 .footer-form {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media screen and (min-width:768px) {
+        flex-direction: column;
+    }
+        @media screen and (min-width:1200px) {
+            flex-direction: row;
+        gap: 12px;
+        }
 }
 
 .footer-form__title {
@@ -21,13 +32,19 @@
 }
 
 .footer-form__input {
-    width: 358px;
+    // width: 450px;
     padding: 15px;
     background-color: var(--dark-bg-cl);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     outline: none;
+    @media screen and (min-width:480px) {
+            width: 450px;
+        }
+                @media screen and (min-width:1200px) {
+                    width: 358px;
+                }
 
 
 &:focus {

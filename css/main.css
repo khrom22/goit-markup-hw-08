@@ -465,11 +465,18 @@ img {
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  padding-left: 0;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0;
+  }
 }
 
 .team__item {
@@ -477,6 +484,22 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 
 .team__text {
@@ -564,6 +587,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -585,12 +610,26 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .client__link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
 }
 .client__link:hover > .client__icon, .client__link:focus > .client__icon {
   fill: #2196F3;
@@ -613,9 +652,36 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  gap: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    text-align: left;
+  }
 }
 
 .footer__link {
@@ -659,8 +725,15 @@ img {
   color: var(--cl-active);
 }
 
-.footer__socials {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-left: 70px;
+  }
 }
 
 .footer-socials__title {
@@ -707,15 +780,30 @@ img {
   fill: #ffffff;
 }
 
-.footer-form__container {
-  margin-left: 93px;
-}
-
 .footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .footer-form__title {
@@ -731,7 +819,6 @@ img {
 }
 
 .footer-form__input {
-  width: 358px;
   padding: 15px;
   background-color: var(--dark-bg-cl);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -739,6 +826,16 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+  }
 }
 .footer-form__input:focus {
   color: rgba(255, 255, 255, 0.6);
