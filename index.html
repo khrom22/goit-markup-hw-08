@@ -18,6 +18,11 @@
     <div class="container header__container">
       <a class="logo" href="index.html">
         <span class="logo__text--blu">Web</span>Studio</a>
+      <button class="header__btn" type="button" data-mobile-open>
+        <svg class="btn__icon" width="40px" height="40px">
+          <use href="./images/icons.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list list">
           <li class="nav__item">
@@ -149,8 +154,14 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="list team__list">
           <li class=" team__item">
-            <img class="team__img" src="./images/Workers/img.jpg" alt="фото Ігоря Дем'яненка" width="270"
-              height="260" />
+            <img class="team__img" srcset="./images\team\worker1@1x-lg.jpg 810w, 
+              images\team\worker1@2x-lg.jpg 540w,
+               images\team\worker1@1x-md.jpg 354w, 
+               images\team\worker1@2x-md.jpg 708w,
+                images\team\worker1@1x-sm.jpg 450w,
+                 images\team\worker1@2x-sm.jpg 900w" sizes="(min-width:1200px) 270px,
+              (min-width:768px) 354px, 100vw" src="./images/team/worker1@1x-lg.jpg" alt=" фото Ігоря Дем'яненка"
+              width="100%" height="auto" />
             <div class="team__text">
               <h3 class="team__name-worker">Игорь Демьяненко</h3>
               <p class="team__profession">Product Designer</p>
@@ -158,7 +169,7 @@
                 <li class="socials__item">
                   <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
                     aria-label="instagram">
-                    <svg class="socials__icon" width="20" height="20">
+                    <svg class="socials__icon" width="20, 354, 270" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -188,8 +199,14 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/Workers/img(1).jpg" alt="фото Ігоря Дем'яненка" width="270"
-              height="260" />
+            <img class="team__img" srcset="./images\team\worker1@1x-lg.jpg 810w, 
+                          images\team\worker2@2x-lg.jpg 540w,
+                           images\team\worker2@1x-md.jpg 354w, 
+                           images\team\worker2@2x-md.jpg 708w,
+                            images\team\worker2@1x-sm.jpg 450w,
+                             images\team\worker2@2x-sm.jpg 900w" sizes="(min-width:1200px) 270px,
+                          (min-width:768px) 354px, 100vw" src="./images/team/worker2@1x-lg.jpg"
+              alt=" фото Ігоря Дем'яненка" width="100%" height="auto" />
             <div class="team__text">
               <h3 class="team__name-worker">Ольга Репина</h3>
               <p class="team__profession">Frontend Developer</p>
@@ -227,8 +244,14 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/Workers/img(2).jpg" alt="фото Ігоря Дем'яненка" width="270"
-              height="260" />
+            <img class="team__img" srcset="./images\team\worker1@1x-lg.jpg 810w, 
+                          images\team\worker3@2x-lg.jpg 540w,
+                           images\team\worker3@1x-md.jpg 354w, 
+                           images\team\worker3@2x-md.jpg 708w,
+                            images\team\worker3@1x-sm.jpg 450w,
+                             images\team\worker3@2x-sm.jpg 900w" sizes="(min-width:1200px) 270px,
+                          (min-width:768px) 354px, 100vw" src="./images/team/worker3@1x-lg.jpg"
+              alt=" фото Ігоря Дем'яненка" width="100%" height="auto" />
             <div class="team__text">
               <h3 class="team__name-worker">Николай Тарасов</h3>
               <p class="team__profession">Marketing</p>
@@ -266,8 +289,14 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/Workers/img(3).jpg" alt="фото Ігоря Дем'яненка" width="270"
-              height="260" />
+            <img class="team__img" srcset="./images\team\worker1@1x-lg.jpg 810w, 
+                        images\team\worker4@2x-lg.jpg 540w,
+                         images\team\worker4@1x-md.jpg 354w, 
+                         images\team\worker4@2x-md.jpg 708w,
+                          images\team\worker4@1x-sm.jpg 450w,
+                           images\team\worker4@2x-sm.jpg 900w" sizes="(min-width:1200px) 270px,
+                        (min-width:768px) 354px, 100vw" src="./images/team/worker4@1x-lg.jpg"
+              alt=" фото Ігоря Дем'яненка" width="100%" height="auto" />
             <div class="team__text">
               <h3 class="team__name-worker">Михаил Ермаков</h3>
               <p class="team__profession">UI Designer</p>
@@ -487,7 +516,42 @@
       </form>
     </div>
   </div>
+
+  <div class="mobile-menu" data-mobile>
+    <button class="mobile-menu__btn" type="button" data-mobile-close>
+      <svg class="mobile-menu__icon" width="40px" height="40px">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="nav__list-mb list">
+      <li class="nav__item">
+        <a class="nav__link-mb" href="">Студія</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link-mb" href="./portfolio.html">Портфоліо</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link-mb" href="">Контакти</a>
+      </li>
+    </ul>
+    <ul class="contacts-mb__list list ">
+      <li class="item">
+        <a class="contacts-mb__link link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+      </li>
+      <li class="item">
+        <a class="contacts-mb__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="socials-mb__list list">
+      <li class="social-mb__item"><a class="socials-mb__link link" href="">Instagram</a></li>
+      <li class="social-mb__item"><a class="socials-mb__link link" href="">Twitter</a></li>
+      <li class="social-mb__item"><a class="socials-mb__link link" href="">Facebook</a></li>
+      <li class="social-mb__item"><a class="socials-mb__link link" href="">Linkedin</a></li>
+    </ul>
+
+  </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

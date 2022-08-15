@@ -4,6 +4,7 @@
 
 .filter-list {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     justify-content: center;
     gap: 8px;
@@ -40,12 +41,19 @@
     flex-wrap: wrap;
     padding-left: 0;
     gap: 30px;
-    flex-grow: calc(100% - (30px * 2) / 3);
+
 }
 
 .portfolio-link {
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width:480px){
+    width: 450px;
+}
+ @media screen and (min-width:768px){
+    width: 354px;
+ }
 
 
 &:hover,
@@ -94,10 +102,13 @@
     bottom: 0;
     left: 0;
     transform: translateY(101%);
-    width: auto;
+
     height: 294px;
     background: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:480px){
+        width: auto;
+    }
 
 
 .portfolio-link:hover & {
