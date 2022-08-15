@@ -1,9 +1,4 @@
-.footer-form__container {
-    @media screen and (min-width:768px) {
-        // margin-left: 93px;
-    }
-    
-}
+
 
 .footer-form {
     display: flex;
@@ -32,7 +27,7 @@
 }
 
 .footer-form__input {
-    // width: 450px;
+
     padding: 15px;
     background-color: var(--dark-bg-cl);
     border: 1px solid rgba(255, 255, 255, 0.3);
