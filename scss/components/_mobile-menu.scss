@@ -7,6 +7,8 @@
         background-color: #ffffff;
         padding: 48px 40px;
 
+        display: flex;
+        flex-direction: column;
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
@@ -46,7 +48,10 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-margin-bottom: 302px;
+       
+            margin-bottom: auto;
+
+
     }
     .nav__link-mb{
         text-decoration: none;
