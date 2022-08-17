@@ -431,9 +431,6 @@ img {
 .benefits__item {
   margin-bottom: 30px;
 }
-.benefits__item:last-child {
-  margin-bottom: 0;
-}
 @media screen and (min-width: 480px) {
   .benefits__item {
     width: 450px;
@@ -442,7 +439,6 @@ img {
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: 354px;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -492,7 +488,6 @@ img {
 
 .work {
   display: none;
-  padding-top: 0;
 }
 @media screen and (min-width: 1200px) {
   .work {
