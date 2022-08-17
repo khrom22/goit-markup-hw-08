@@ -82,6 +82,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -1252,7 +1254,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .form-title {
-    width: 450px;
+    width: 100%;
+    line-height: 1.71;
   }
 }
 
@@ -1355,7 +1358,7 @@ img {
 @media screen and (min-width: 1200px) {
   .register-form-agreement-text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.17;
   }
 }
 

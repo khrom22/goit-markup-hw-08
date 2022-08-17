@@ -12,7 +12,8 @@
     color: #212121;
     margin-bottom: 12px;
 @media screen and (min-width:1200px) {
-        width: 450px;
+        width: 100%;
+        line-height: 1.71;
     }
    
 }
@@ -114,7 +115,7 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
-            line-height: 1.71;
+            line-height: 1.17;
     }
 }
 
