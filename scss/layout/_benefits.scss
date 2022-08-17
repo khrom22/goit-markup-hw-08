@@ -6,15 +6,14 @@
 // }
 
 .benefits__list {
-    @media screen and (min-width:768px) {
-        display: flex;
+    display: flex;
         flex-wrap: wrap;
     gap: 30px;
-    }   
+    
 }
 
 .benefits__item {
-    margin-bottom: 30px;
+    
     @media screen and (min-width:480px) {
             width: 450px;
     
