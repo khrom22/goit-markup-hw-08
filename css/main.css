@@ -145,7 +145,6 @@ img {
   border-radius: 4px;
   padding: 40px;
   text-align: center;
-  max-width: 450px;
 }
 @media screen and (min-width: 480px) {
   .modal {

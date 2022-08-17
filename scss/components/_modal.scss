@@ -20,13 +20,14 @@
     border-radius: 4px;
     padding: 40px;
     text-align: center;
-    max-width: 450px;
+    // max-width: 450px;
     
     @media screen and (min-width: 480px){
         width: 450px;
     }  
     @media screen and (min-width: 1200px) {
               width: 528px;
+    
           }
 }
 
